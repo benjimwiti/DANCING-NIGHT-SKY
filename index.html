@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLAY SPACE</title>
+    <link rel="stylesheet" href="../output.css">
+   
+</head>
+<body  id="body-el" class="dark:bg-slate-900 relative">
+    <section class="">
+        <div id="board" class="flex min-h-full gap-2 flex-wrap content-center">
+            <div class="cell" onclick="cellClicked(0)">1</div>
+            <div class="cell" onclick="cellClicked(1)">2</div>
+            <div class="cell" onclick="cellClicked(2)">3</div>
+            <div class="cell" onclick="cellClicked(3)">3</div>
+            <div class="cell" onclick="cellClicked(4)">5</div>
+            <div class="cell" onclick="cellClicked(5)">6</div>
+            <div class="cell" onclick="cellClicked(6)">7</div>
+            <div class="cell" id="eight" onclick="cellClicked(7)">8</div>
+            <div class="cell" id="nine" onclick="cellClicked(8)">9</div>
+        </div>    
+    </section>
+    
+    <div id="test" class="cell"></div>
+
+    <button id="animateFlexBtn" class="bg-white text-black my-4 text-5xl">animate</button> 
+    <section id="dot-el"></section>
+    </main>
+</body>
+</html>
+<script src="./index.js"></script>

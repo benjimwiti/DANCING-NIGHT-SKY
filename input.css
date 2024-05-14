@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: all 4s;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    transition: background-image 2s ease-out;
+    background-color: #254d9c;
+    text-align: center;
+    padding-top: 5vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(3,auto);
+    justify-content:center ;
+    grid-gap : 4px;
+
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 3rem;
+    border: 3px solid white;
+    cursor: pointer;
+    color: white;
+}
+
+.o1 {
+    animation: o1 2s ease-out 0s forwards;
+}
+@keyframes o1 {
+    0%{flex-grow: 0;}
+    95%{flex-grow: 1;}
+    100%{
+        flex-grow: 1;}
+}
+.o2 {
+    order:2;
+}
+ 
+/* #board {
+    width: 350px;
+    height: 350px;
+} */
+
+.dot {
+    height: 2px;
+    width: 2px;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: dotshow;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes dotshow {
+    0% {opacity: 0;}
+    33% {opacity: 1;}
+    66% {opacity: 0;}
+    100% {opacity: 1;}
+    
+}
+
+#test {
+    transition: all 3s;
+    transform: translate(100px, 50px);
+}
+
+#test {
+    position: absolute;
+    top: 10%;
+    animation: whoosh 3s forwards alternate 3;
+    &:hover {transform: translate(20%, 50%) ;}
+}
+@keyframes whoosh {
+    0%{transform: translate(0px, 0px);}
+    100%{transform: translate(800px, 100px);}
+}

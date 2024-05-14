@@ -1,0 +1,11 @@
+{
+  "name": "rw",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./input.css -o ./output.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
