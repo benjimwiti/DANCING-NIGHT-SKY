@@ -1,12 +1,17 @@
-
+//
+const calma = document.getElementById("calma-el")
 const renderDotEl = document.getElementById("renderDot-el")
-let clickCount = 0
-
-
 renderDotEl.addEventListener("click", function(){
     console.log("click")
     renderDots()
 })
+calma.addEventListener("click", function() {
+    console.log("bodyclick")
+    stopDots()
+})
+
+//selectbynth-child 300th dot and removeinterval
+//renderDotEl.ondblclick
 
 //configuring the dots
 function addDot () {
@@ -55,11 +60,22 @@ function addDot () {
         },5000)
 }
 
-        //generate more random action
-        function renderDots () {
-            setInterval(() => {
-                addDot ()                   
+        //generate more random action by spacing the rendering
+        let  callDot =  setInterval(() => {
+            addDot ()                   
         },1000)
+        function renderDots () {
+            console.log("empty renderDots()") 
         }
-                
 
+        function stopDots() {
+            clearInterval(callDot)
+        }
+
+//animating button transition
+
+
+//setTimeout
+
+
+//
