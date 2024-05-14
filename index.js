@@ -1,14 +1,4 @@
-//
-const calma = document.getElementById("calma-el")
-const renderDotEl = document.getElementById("renderDot-el")
-renderDotEl.addEventListener("click", function(){
-    console.log("click")
-    renderDots()
-})
-calma.addEventListener("click", function() {
-    console.log("bodyclick")
-    stopDots()
-})
+
 
 //selectbynth-child 300th dot and removeinterval
 //renderDotEl.ondblclick
@@ -57,21 +47,23 @@ function addDot () {
                 dot.style.transform = `translate(${tx2}rem, ${ty2}rem)`
             }
             console.log("new interval")
-        },5000)
+        },5000)  //a=5s
 }
 
         //generate more random action by spacing the rendering
         let  callDot =  setInterval(() => {
             addDot ()                   
         },1000)
-        function renderDots () {
-            console.log("empty renderDots()") 
-        }
+        
 
         function stopDots() {
             clearInterval(callDot)
         }
-
+         
+        //define number of stars in your sky ill define 100 stars below 
+        setTimeout(() => {
+            stopDots()
+        }, 25000 ); //NO of stars: 20 x b/a where a=5s and b=25s || 
 //animating button transition
 
 
