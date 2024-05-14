@@ -26,13 +26,12 @@ function animateFlex () {
 animateFlexBtn.addEventListener("click", function(){
     animateFlex()
     console.log("click")
-    addDots()
 })
 
 //const dotEl = document.getElementById("dot-el")
-function dotshowb () {
+function addDot () {
     let dots = []
-    for(let i=0; i<10; i++) {
+    for(let i=0; i<20; i++) {
         //set random position
         const rnt = Math.random()*100
         const rnl = Math.random()*100
@@ -77,13 +76,13 @@ function dotshowb () {
 }
 
         //generate more random action
-        function addDots () {
-            for(let i=0; i<10; i++){
-                setInterval(() => {
-                        dotshowb ()                   
-                },5000)
-            }
+        function renderDots () {
+            setInterval(() => {
+                addDot ()                   
+        },5000)
         }
+                
 
 
 const spacebox = document.getElementById('test')
+renderDots()
