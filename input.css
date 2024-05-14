@@ -17,6 +17,7 @@ body {
     background-color: #254d9c;
     text-align: center;
     padding-top: 5vh;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -38,23 +39,6 @@ body {
     color: white;
 }
 
-.o1 {
-    animation: o1 2s ease-out 0s forwards;
-}
-@keyframes o1 {
-    0%{flex-grow: 0;}
-    95%{flex-grow: 1;}
-    100%{
-        flex-grow: 1;}
-}
-.o2 {
-    order:2;
-}
- 
-/* #board {
-    width: 350px;
-    height: 350px;
-} */
 
 .dot {
     height: 2px;
@@ -76,18 +60,6 @@ body {
     
 }
 
-#test {
-    transition: all 3s;
-    transform: translate(100px, 50px);
-}
-
-#test {
-    position: absolute;
-    top: 10%;
-    animation: whoosh 3s forwards alternate 3;
-    &:hover {transform: translate(20%, 50%) ;}
-}
-@keyframes whoosh {
-    0%{transform: translate(0px, 0px);}
-    100%{transform: translate(800px, 100px);}
+#renderDot-el {
+    background-color: #0f0f2c6e;
 }

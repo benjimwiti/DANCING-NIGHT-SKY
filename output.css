@@ -1,6 +1,6 @@
-/*
-! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
-*/
+/* npm run tailwind */
+
+/* ! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -554,48 +554,22 @@ video {
   --tw-contain-style:  ;
 }
 
-.relative {
-  position: relative;
-}
-
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-.flex {
-  display: flex;
+.rounded {
+  border-radius: 0.25rem;
 }
 
-.min-h-full {
-  min-height: 100%;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
-.content-center {
-  align-content: center;
-}
-
-.gap-2 {
-  gap: 0.5rem;
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+.p-4 {
+  padding: 1rem;
 }
 
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
-}
-
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 * {
@@ -612,6 +586,7 @@ body {
   background-color: #254d9c;
   text-align: center;
   padding-top: 5vh;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -631,33 +606,6 @@ body {
   cursor: pointer;
   color: white;
 }
-
-.o1 {
-  animation: o1 2s ease-out 0s forwards;
-}
-
-@keyframes o1 {
-  0%{
-    flex-grow: 0;
-  }
-
-  95%{
-    flex-grow: 1;
-  }
-
-  100%{
-    flex-grow: 1;
-  }
-}
-
-.o2 {
-  order:2;
-}
-
-/* #board {
-    width: 350px;
-    height: 350px;
-} */
 
 .dot {
   height: 2px;
@@ -689,25 +637,8 @@ body {
   }
 }
 
-#test {
-  transition: all 3s;
-  transform: translate(100px, 50px);
-  position: absolute;
-  top: 10%;
-  animation: whoosh 3s forwards alternate 3;
-  &:hover {
-    transform: translate(20%, 50%) ;
-  }
-}
-
-@keyframes whoosh {
-  0%{
-    transform: translate(0px, 0px);
-  }
-
-  100%{
-    transform: translate(800px, 100px);
-  }
+#renderDot-el {
+  background-color: #0f0f2c6e;
 }
 
 @media (prefers-color-scheme: dark) {

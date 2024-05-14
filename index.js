@@ -1,34 +1,14 @@
-const nine = document.getElementById("nine") 
-const eight = document.getElementById("eight")
-const animateFlexBtn = document.getElementById("animateFlexBtn")
+
+const renderDotEl = document.getElementById("renderDot-el")
 let clickCount = 0
 
-let flexItems = (document.querySelectorAll('.cell'))
-console.log(flexItems)
 
-//counting from 1
-/* for (const cell of flexItems) {
-    cell.classList.add('o1')
-    cell.addEventListener('animationend', function() {
-        cell.classList.remove('o1')
-    })
-} */
-
-//counting from 9
-function animateFlex () {
-    nine.classList.add("o1")
-    nine.addEventListener("animationend", function() {
-        nine.classList.remove("o1")
-        eight.classList.add("o1")
-    })
-}
-
-animateFlexBtn.addEventListener("click", function(){
-    animateFlex()
+renderDotEl.addEventListener("click", function(){
     console.log("click")
+    renderDots()
 })
 
-//const dotEl = document.getElementById("dot-el")
+//configuring the dots
 function addDot () {
     let dots = []
     for(let i=0; i<20; i++) {
@@ -37,7 +17,7 @@ function addDot () {
         const rnl = Math.random()*100
         const tx =  Math.random()*100
         const ty = Math.random()*100
-        const rno = Math.random()
+        const rnopacity = Math.random()
         
         //make and style the dot
         let dot = document.createElement("div")
@@ -49,13 +29,13 @@ function addDot () {
         dot.style.transitionProperty = 'transform'
         dot.style.transitionDuration = '30s'
         dot.style.transitionTimingFunction = 'linear'
-        dot.style.opacity = `${rno}`
+        dot.style.opacity = `${rnopacity}`
         console.log(dot.style)
         document.body.appendChild(dot)
         dots.push(dot)
         
-        //animate by loading it a bit later
     }
+    //animate by loading it a bit later
         setTimeout(() => {
             for(const dot of dots) {
                 const tx2 =  (Math.random()*90)-(Math.random()*90)
@@ -83,6 +63,3 @@ function addDot () {
         }
                 
 
-
-const spacebox = document.getElementById('test')
-renderDots()
