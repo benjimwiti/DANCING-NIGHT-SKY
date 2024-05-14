@@ -42,7 +42,7 @@ function addDot () {
         //make and style the dot
         let dot = document.createElement("div")
         dot.classList.add("dot")
-        dot.style.position = 'absolute'
+        dot.style.position = 'fixed'
         dot.style.top = `${rnt}%`
         dot.style.left = `${rnl}%`
         dot.style.transform = `translate(${tx}%, ${ty}%)`
@@ -79,7 +79,7 @@ function addDot () {
         function renderDots () {
             setInterval(() => {
                 addDot ()                   
-        },5000)
+        },1000)
         }
                 
 
