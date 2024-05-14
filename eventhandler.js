@@ -1,3 +1,4 @@
+//TO DELETE
 $(document).ready(function() {
     // Attach a click event handler to the parent element
     $('.parent').on('click', 'button.child', { foo: 'bar' }, function(event, data) {

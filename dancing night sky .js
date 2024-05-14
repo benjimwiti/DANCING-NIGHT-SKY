@@ -1,8 +1,3 @@
-//TO DELETE
-
-//selectbynth-child 300th dot and removeinterval
-//renderDotEl.ondblclick
-
 //configuring the dots
 const bodyEl = document.querySelector('body')
 bodyEl.style.backgroundColor= `black`
@@ -84,15 +79,3 @@ function addDot () {
         setTimeout(() => {
             stopDots()
         }, 50000 ); //NO of stars: 10 x b/a where a=5s and b=50s | in this case (10 x 50/5 = 100)| 
-
-        //animating button transition
-
-/* window.addEventListener("resize", function(){
-    document.getElementById("demo").innerHTML = sometext;
-); */
-//element.addEventListener(event, function, useCapture);
-//element.addEventListener("click", function(){ myFunction(p1, p2); });
-//element.removeEventListener("mousemove", myFunction);
-
-
-//
