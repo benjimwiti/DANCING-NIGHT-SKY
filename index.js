@@ -49,7 +49,7 @@ function addDot () {
             }
         },1)
 
-        //keep it moving
+        //keep it moving-example of infinite loop
         setInterval(() => {
             for(const dot of dots) {
                 const tx2 =  (Math.random()*90)-(Math.random()*90)

@@ -563,11 +563,6 @@ video {
   border-radius: 0.25rem;
 }
 
-.bg-slate-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-}
-
 .p-4 {
   padding: 1rem;
 }
@@ -643,6 +638,10 @@ body {
 }
 
 #renderDot-el {
+  background-color: #0f0f2c6e;
+}
+
+#calma-el {
   background-color: #0f0f2c6e;
 }
 
