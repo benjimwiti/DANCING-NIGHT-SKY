@@ -14,7 +14,6 @@ body {
     height: 100vh;
     width: 100vw;
     transition: background-image 2s ease-out;
-    /* background-color: #254d9c; */
     text-align: center;
     padding-top: 5vh;
     scroll-behavior: smooth;
